@@ -44,7 +44,7 @@ if (preloader) {
     // Add delay before removing the preloader (e.g., 2 seconds)
     setTimeout(() => {
       preloader.remove();
-    }, 2500); // 2000 milliseconds = 2 seconds
+    }, 2700); // 2000 milliseconds = 2 seconds
   });
 }
 
