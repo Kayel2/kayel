@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -227,3 +219,36 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+const glightbox = GLightbox({
+  selector: '.glightbox'
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper('.init-swiper', {
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 5000
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    on: {
+      slideChange: function () {
+        const activeSlide = this.slides[this.activeIndex];
+
+        // Get data from the active slide
+        const title = activeSlide.getAttribute('data-title');
+        const description = activeSlide.getAttribute('data-description');
+
+        // Update the description area with the new information
+        document.getElementById('certificate-description-title').innerText = title;
+        document.getElementById('certificate-description').innerText = description;
+      }
+    }
+  });
+});
