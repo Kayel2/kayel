@@ -49,7 +49,6 @@ if (preloader) {
 }
 
 
-
   /**
    * Scroll top button
    */
