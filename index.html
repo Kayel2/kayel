@@ -43,10 +43,7 @@
     <header id="header" class="header dark-background d-flex flex-column">
       <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <div
-        class="profile-img"
-        style="width: auto; height: auto; overflow: hidden"
-      >
+      <div class="profile-img">
         <img
           src="assets/img/profile-img-profile1.jpg"
           alt=""
@@ -58,7 +55,6 @@
         href="index.html"
         class="logo d-flex align-items-center justify-content-center"
       >
-       
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Jun Kyle Gulay</h1>
       </a>
@@ -105,11 +101,11 @@
           </li>
           <li>
             <a href="#project"
-              ><i class="bi bi-images navicon"></i> Projects</a
+              ><i class="bi bi-projector navicon"></i> Projects</a
             >
           </li>
           <li>
-            <a href="#contact"
+            <a href="#footer"
               ><i class="bi bi-envelope-at navicon"></i> Contact Me</a
             >
           </li>
@@ -120,22 +116,20 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <div
-          id="particles-js"
-          class="position-absolute"
-          style="z-index: 1; top: 0; left: 0; width: 100%; height: 100%"
-        ></div>
+        <div id="particles-js" class="position-absolute"></div>
 
         <div
           class="container text-center"
           data-aos="fade-up"
           data-aos-delay="100"
         >
+          <p>Hello World, I'm</p>
           <h2>Jun Kyle Gulay</h2>
           <p>
+            a
             <span
               class="typed"
-              data-typed-items="Web Developer / CyberSecurity Analyst
+              data-typed-items="Web Developer
               "
             ></span
             ><span
@@ -176,17 +170,17 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-3 justify-content-center">
             <div class="col-lg-3">
-              <div class="" style="width: auto; height: auto; overflow: hidden">
+              <div class="p-2 d-flex flex-column justify-content-center">
                 <img
-                  src="assets/img/profile-img-profile1.png"
+                  src="assets/img/aw.jpg"
                   alt=""
-                  class="img-fluid"
+                  class="img-fluid about-img"
                 />
               </div>
             </div>
-            <div class="col-lg-8 content">
-              <h2>Jun Kyle Armecin Gulay</h2>
-              <div class="row">
+            <div class="col-lg-8">
+              <h2 class="">Jun Kyle Armecin Gulay</h2>
+              <div class="row box">
                 <div class="col-lg-6">
                   <ul>
                     <li>
@@ -248,7 +242,7 @@
       <!-- Stats Section -->
       <div id="stats" class="stats">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
+          <div class="row gy-4 box">
             <div class="col-lg-3 col-md-6">
               <div class="stats-item">
                 <i class="bi bi-award-fill"></i>
@@ -265,12 +259,12 @@
             </div>
             <!-- End Stats Item -->
 
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-3 col-md-6">
               <div class="stats-item">
                 <i class="bi bi-person-workspace"></i>
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="1"
+                  data-purecounter-end="3"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
@@ -302,7 +296,7 @@
                 <i class="bi bi-github"></i>
                 <span
                   data-purecounter-start="0"
-                  data-purecounter-end="4"
+                  data-purecounter-end="6"
                   data-purecounter-duration="1"
                   class="purecounter"
                 ></span>
@@ -312,11 +306,13 @@
               </div>
             </div>
             <!-- End Stats Item -->
-            <hr />
           </div>
         </div>
       </div>
       <!-- /Stats Section -->
+      <div class="row">
+        <div class="line"></div>
+      </div>
 
       <!-- Skills Section -->
       <section id="skills" class="skills section light-background">
@@ -331,7 +327,7 @@
                 >
                   <h2>
                     <i class="bi bi-laptop"></i>
-                    Skills & Abilities
+                    Tech-Stack
                   </h2>
                 </div>
                 <div
@@ -339,7 +335,7 @@
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 >
-                  <h3 style="color: #f7eed3">Web <span>Developer</span></h3>
+                  <h3 class="text">Web <span>Developer</span></h3>
                   <div class="image">
                     <img
                       draggable="false"
@@ -478,7 +474,7 @@
             </div>
           </div>
           <div class="box" data-aos="fade-right" data-aos-duration="1000">
-            <h3 style="color: #f7eed3">CyberSecurity <span>Analyst</span></h3>
+            <h3 class="text">CyberSecurity <span>Analyst</span></h3>
             <div class="image">
               <img
                 draggable="false"
@@ -574,7 +570,9 @@
         </div>
       </section>
       <!-- /Skills Section -->
-      <hr />
+      <div class="row">
+        <div class="line"></div>
+      </div>
 
       <!-- Resume Section -->
       <section id="resume" class="resume section">
@@ -692,7 +690,9 @@
           </div>
         </div>
       </section>
-      <hr />
+      <div class="row">
+        <div class="line"></div>
+      </div>
       <!-- /Resume Section -->
 
       <!-- Portfolio Section -->
@@ -707,7 +707,6 @@
           </div>
         </div>
         <div class="container">
-          
           <div
             class="isotope-layout"
             data-default-filter="*"
@@ -735,7 +734,7 @@
             >
               <!-- Portfolio Item 1 -->
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
+                class="box col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
               >
                 <div class="portfolio-content h-100">
                   <img
@@ -1088,94 +1087,236 @@
             <!-- End Portfolio Container -->
           </div>
         </div>
-
-        <hr />
-        <section
+        <div class="row">
+          <div class="line"></div>
+        </div>
+      </section>
+      <section
         id="project"
-          class="project section light-background"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="container">
-            <div class="title" data-aos="fade-down" data-aos-duration="1000">
-              <h2>
-                <i class="bi bi-images"></i>
-                Projects
-              </h2>
-            </div>
-            <div class="p-4">
-              
-              <h5 class="text-center">
-                <strong>Project Name:</strong> CampusCare
-              </h5>
+        class="project section light-background"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="title" data-aos="fade-down" data-aos-duration="1000">
+            <h2>
+              <i class="bi bi-projector"></i>
+              Projects
+            </h2>
+          </div>
+          <div
+            class="p-4 box d-flex flex-column align-items-center justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h5 class="text-center">
+              <strong>Project Name:</strong> CampusCare
+            </h5>
 
-              <p>
-                <em
-                  ><strong>Project Description: </strong><br />A mobile-based
-                  application designed for reporting and tracking issues within
-                  a university campus. The app facilitates communication between
-                  students and administration, ensuring that campus problems are
-                  addressed efficiently.</em
-                >
-              </p>
-              <div
-                class="row gy-4 isotope-container"
-                data-aos="fade-up"
-                data-aos-delay="100"
+            <p>
+              <em
+                ><strong>Project Description: </strong><br />A mobile-based
+                application designed for reporting and tracking issues within a
+                university campus. The app facilitates communication between
+                students and administration, ensuring that campus problems are
+                addressed efficiently.</em
               >
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/sc.png" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <a
-                        href="assets/img/sc.png"
-                        title="Mobile-App"
-                        data-gallery="portfolio-gallery"
-                        class="glightbox preview-link"
-                      >
-                        <i class="bi bi-zoom-in"></i>
-                      </a>
-                    </div>
+            </p>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/sc.png" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/sc.png"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/erd.png" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <a
-                        href="assets/img/erd.png"
-                        title="Mobile-App"
-                        data-gallery="portfolio-gallery"
-                        class="glightbox preview-link"
-                      >
-                        <i class="bi bi-zoom-in"></i>
-                      </a>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/erd.png" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/erd.png"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-                  <div class="portfolio-content h-100">
-                    <img src="assets/img/sc2.jpg" class="img-fluid" alt="" />
-                    <div class="portfolio-info">
-                      <a
-                        href="assets/img/sc2.jpg"
-                        title="Mobile-App"
-                        data-gallery="portfolio-gallery"
-                        class="glightbox preview-link"
-                      >
-                        <i class="bi bi-zoom-in"></i>
-                      </a>
-                    </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/sc2.jpg" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/sc2.jpg"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </section>
-      <section id="contact">
+          <div
+            class="p-4 box d-flex flex-column align-items-center justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h5 class="text-center">
+              <strong>Project Name:</strong> Remote Method Invocation
+            </h5>
 
+            <p>
+              <em
+                ><strong>Project Description: </strong><br />A mobile-based
+                application designed for reporting and tracking issues within a
+                university campus. The app facilitates communication between
+                students and administration, ensuring that campus problems are
+                addressed efficiently.</em
+              >
+            </p>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/rmi3.jpg" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/rmi3.jpg"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/rmi2.jpg" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/rmi2.jpg"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/rmi1.jpg" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/rmi1"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 box d-flex flex-column align-items-center justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h5 class="text-center">
+              <strong>Project Name:</strong> Personal Website
+            </h5>
+
+            <p>
+              <em
+                ><strong>Project Description: </strong><br />A mobile-based
+                application designed for reporting and tracking issues within a
+                university campus. The app facilitates communication between
+                students and administration, ensuring that campus problems are
+                addressed efficiently.</em
+              >
+            </p>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/site1.png" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/site1.png"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/site2.png" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/site2.png"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 project-item isotope-item">
+                <div class="project-content h-100">
+                  <img src="assets/img/site3.png" class="img-fluid" alt="" />
+                  <div class="project-info">
+                    <a
+                      href="assets/img/site3.png"
+                      title="Mobile-App"
+                      data-gallery="project-gallery"
+                      class="glightbox preview-link"
+                    >
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <!-- /Portfolio Section -->
       <footer id="footer" class="footer">
         <div class="container footer-top">
@@ -1236,11 +1377,18 @@
                 <li><a href="#">CyberSecurity Analyst</a></li>
               </ul>
             </div>
-            <div class="bottom">
-              <div class="text-center">
-                © 2024 Copyright:
-                <a class="text-reset fw-bold" href="">gulayjunkyle</a>
+
+            <div class="col-lg-4 col-md-6 footer-about">
+              <div class="book">
+                <p>Hello</p>
+                <div class="cover">
+                  <p>Hover Me</p>
+                </div>
               </div>
+            </div>
+
+            <div class="bottom">
+              <div class="text-center"></div>
             </div>
           </div>
         </div>
