@@ -1,7 +1,7 @@
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --heading-font: "Ubuntu",  sans-serif;
+  --nav-font: "Ubuntu",  sans-serif;
 }
 
 :root { 
@@ -377,63 +377,129 @@ footer .bottom a{
   text-decoration: none;
 }
 
-.footer .book {
+
+.footer .card {
+  display: flex;
   position: relative;
-  border-radius: 10px;
-  width: 220px;
-  height: 200px;
-  background-color: rgb(166, 101, 101);
-  -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
-  -webkit-transform: preserve-3d;
-  -ms-transform: preserve-3d;
-  transform: preserve-3d;
-  -webkit-perspective: 2000px;
-  perspective: 2000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #000;
+  flex-direction: column;
+  height: 330px;
+  width: 190px;
+  min-width: 250px;
+  padding: 1rem;
+  border-radius: 16px;
+  background: #F7EED3;
+  box-shadow: -1rem 0 3rem #00000067;
+  transition: .2s;
+  font-family: 'Inter', sans-serif;
 }
 
-.footer .cover {
-  top: 0;
+.footer .card:hover {
+  transform: translateY(-0.4rem);
+}
+
+.footer .card-author {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.author-avatar {
+  position: relative;
+}
+
+.author-avatar img {
+  width: 120px; 
+  height: 120px;
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.85);  
+}
+
+.footer .author-name {
+  color: #7a7a8c;
+}
+
+.footer .author-name-prefix {
+  color: #e52e71;
+  font-weight: 600;
+}
+
+.footer .author-avatar span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin: 16px 10px;
+}
+
+.footer .half-circle {
   position: absolute;
-  background-color: rgb(191, 143, 143);
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform-origin: 0;
-  -ms-transform-origin: 0;
-  transform-origin: 0;
-  -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
 }
 
-.footer .book:hover .cover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: rotatey(-80deg);
-  -ms-transform: rotatey(-80deg);
-  transform: rotatey(-80deg);
+.footer .card-header {
+  margin-bottom: auto;
+  color: #7a7a8c;
+}
+
+.footer .card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #7a7a8c;
+}
+
+.footer .card-header .title {
+  font-size: 25px;
+  margin: .25rem 0 auto;
+  cursor: pointer;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.footer .card-header .title:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer .tags {
+  margin: 1rem 0 2rem;
+  padding: .5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.footer .tags a {
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  font-size: .66rem;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
+  padding: .2rem .85rem .25rem;
+  position: relative;
+}
+
+.footer .tags a:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
 }
 
 .footer p {
